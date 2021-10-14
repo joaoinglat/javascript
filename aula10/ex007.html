@@ -13,6 +13,9 @@
             font: normal 10pt arial;
             width: 100px;
         }
+        div.editar{
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -20,18 +23,33 @@
     <input type="number" name="txtn1" id="txtn1"> + 
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="res">
+    <div id="res1" class="editar">
+        Resultado
+        <h1>Multiplicando Valores</h1>
+    <input type="number" name="txtn3" id="txtn3"> X 
+    <input type="number" name="txtn4" id="txtn4">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <div id="res2" class="editar">
         Resultado
     </div>
     <script>
         function somar(){
             var tn1=window.document.getElementById('txtn1')
             var tn2=window.document.getElementById('txtn2')
-            var res=window.document.getElementById('res')
-            var n1= Number(tn1.value)
-            var n2= Number(tn2.value)
-            var s = n1 + n2
-            res.innerHTML=`A soma entre ${n1} e ${n2} é igual a ${s}`
+            var res1=window.document.getElementById('res1')
+            var n1= Number(txtn1.value)
+            var n2= Number(txtn2.value)
+            var s1 = n1 + n2
+            res1.innerHTML=`A soma entre ${n1} e ${n2} é igual a ${s1}`
+        }
+        function multiplicar(){
+            var tn3=window.document.getElementById('txtn3')
+            var tn4=window.document.getElementById('txtn4')
+            var res2=window.document.getElementById('res2')
+            var n3= Number(tn3.value)
+            var n4= Number(tn4.value)
+            var s2 = n3 * n4
+            res2.innerHTML=`A multiplicação entre ${n3} e ${n4} é igual a ${s2}`
         }
     </script>
 </body>
