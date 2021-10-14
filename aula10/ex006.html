@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()" onmousedown="apertar()">
+        Clique e segure!
+    </div>
+    <script>
+        /*
+        A função também pode ser feita assim:
+            a.addEventListener('nomedoevento', nome que eu dei para ele)
+            a.addEventListener('nomedoevento', nome que eu dei para ele)
+            a.addEventListener('nomedoevento', nome que eu dei para ele)
+        */
+       
+        function clicar(){
+            var a=window.document.getElementById('area')
+            a.innerText='Clicou!'
+            
+        }
+        function apertar(){
+            var d=window.document.getElementById('area')
+            d.innerText='Carregando...'
+        }
+
+        function entrar() {
+            var b=window.document.getElementById('area')
+            b.style.backgroundColor ='blue'
+        }
+        function sair(){
+            var c=window.document.getElementById('area')
+            c.style.backgroundColor='green'
+        }
+    </script>
+</body>
+</html>
