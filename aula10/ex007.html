@@ -25,6 +25,7 @@
     <input type="button" value="Somar" onclick="somar()">
     <div id="res1" class="editar">
         Resultado
+    </div>
         <h1>Multiplicando Valores</h1>
     <input type="number" name="txtn3" id="txtn3"> X 
     <input type="number" name="txtn4" id="txtn4">
@@ -40,7 +41,7 @@
             var n1= Number(txtn1.value)
             var n2= Number(txtn2.value)
             var s1 = n1 + n2
-            res1.innerHTML=`A soma entre ${n1} e ${n2} é igual a ${s1}`
+            res1.innerHTML=`<p>A soma entre ${n1} e ${n2} é igual a ${s1}</p>`
         }
         function multiplicar(){
             var tn3=window.document.getElementById('txtn3')
@@ -49,7 +50,7 @@
             var n3= Number(tn3.value)
             var n4= Number(tn4.value)
             var s2 = n3 * n4
-            res2.innerHTML=`A multiplicação entre ${n3} e ${n4} é igual a ${s2}`
+            res2.innerHTML=`<p>A multiplicação entre ${n3} e ${n4} é igual a ${s2}</p>`
         }
     </script>
 </body>
