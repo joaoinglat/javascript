@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condições</title>
+    <style>
+        p{
+            font-size:1.5em;
+        }
+    </style>
 </head>
 <body>
+    <h1>Descubra se você é brasileiro!</h1>
+    <p>Onde você nasceu? <input type="text" name="txtvel" id="txtvel"> > <input type="button" value="Verificar" onclick="calcular()"></p>
+    <div id="res">
+
+    </div>
    <script>
-        var país = 'EUA'
-        document.write(`<h1>Nasceu em ${país}</h1>`)
-        if (país=='Brasil'){
-            document.write('<h1> Você é brasileiro!</h1>')
-        }else{
-            document.write('<h1>Você é estrangeiro</h1>')
-        }
-    
-    
+       function calcular(){
+            var txtv=document.getElementsById('txtvel')
+            var res=document.querySelector('div#res')
+            var vel=String(txtv.value)
+            res.innerHTML=`<h1>Nasceu em ${vel}</h1>`
+            if(vel=='Brasil'){
+                res.innerHTML+='<h1> Você é brasileiro!</h1>'
+            }else{
+                res.innerHTML+='<h1>Você é estrangeiro</h1>'
+            }
+       }
    </script> 
 </body>
 </html>
