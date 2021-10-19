@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições Aninhadas</title>
+</head>
+<body>
+    <script>
+        var agora=new Date()
+        var diaSem=agora.getDay()
+        /*
+        0 = Domingo
+        1 = Segunda 
+        2 = Terça
+        3 = Quarta
+        4 = Quinta
+        5 = Sexta
+        6 = Sábado
+        */
+    
+        switch(diaSem){
+            case 0:
+                document.write("<h1>Olá, tenha um feliz Domingo</h1>")
+                break
+            case 1:
+                document.write("<h1>Olá, tenha uma feliz Segunda</h1>")
+                break
+            case 2:
+                document.write("<h1>Olá, tenha uma feliz Terça</h1>") 
+                break
+            case 3:
+                document.write("<h1>Olá, tenha uma feliz Quarta</h1>")
+                break
+            case 4:
+                document.write("<h1>Olá, tenha uma feliz Quinta</h1>")
+                break
+            case 5:
+                document.write("<h1>Olá, tenha uma feliz Sexta</h1>")
+                break
+            case 6:
+                document.write("<h1>Olá, tenha um feliz Sábado</h1>")
+                break
+            default:
+                document.write("[ERRO] DIA INVÁLIDO")
+                break
+        }
+    </script>  
+</body>
+</html>
