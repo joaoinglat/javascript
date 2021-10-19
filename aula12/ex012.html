@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições Aninhadas</title>
+</head>
+<body>
+    
+    <Script>
+        /*
+        Pode se utilizar este código abaixo para utilizar a hora do sistema que está rodando o programa
+        var agora= new Date()
+        var hora= agora.getHours()
+        */
+        var hora= Number(prompt("Que horas são? (Formato 24h)"))
+        if (hora >=18 && hora<=24){
+            document.write(`<h1>Agora são ${hora} horas. Tenha uma boa noite!</h1>`)
+        }   else if(hora <18 && hora>=12){
+                document.write(`<h1>Agora são ${hora} horas. Tenha uma bom dia!</h1>`)
+        }   else if(hora <12 && hora > 0){
+                document.write(`<h1>Agora são ${hora} horas. Tenha uma boa manhã!</h1>`)
+        }   else if(hora < 0 || hora >25){
+            document.write(`<h1>Desculpe, nosso sistema não identificou ${hora} horas.</h1>`)
+        }
+                
+                    
+                    
+                    
+            
+    </Script>
+</body>
+</html>
