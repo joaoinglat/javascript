@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let valores=[8,1,7,4,2,9]
+    valores.sort()
+    /*
+    Pode ser feito:
+    for(let pos=0;pos<valores.length;pos++){
+        document.write(`<p>A posição ${pos} possui o valor ${valores[pos]}</p>`)
+    }
+    Ou:
+    */
+    for(let pos in valores){
+        document.write(`<p>A posição ${pos} possui o valor ${valores[pos]}</p>`)
+    }
+    let num= [5,8,2,9,3]
+    num.push(1)
+    num.sort()
+    document.write(num)
+    document.write(`<p>O vetor tem ${num.length} posições</p>`)
+    document.write(`<p>O primeiro valor do vetor é ${num[0]}</p>`)
+    let posicao= num.indexOf(8)
+    if(posicao==-1){
+        document.write('o Valor não foi encontrado')
+    } else{
+        document.write(`O valor 8 está na posição ${posicao}`)
+    }
+
+</script>  
+</body>
+</html>
